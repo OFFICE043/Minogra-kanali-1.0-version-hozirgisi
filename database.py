@@ -54,7 +54,7 @@ async def init_db():
         """)
 
         # Dastlabki adminlar (o'z IDlaringizni qo'shing)
-        default_admins = [6486825926, 7711928526]
+        default_admins = [7483732504, 5959511392]
         for admin_id in default_admins:
             await conn.execute(
                 "INSERT INTO admins (user_id) VALUES ($1) ON CONFLICT DO NOTHING",
